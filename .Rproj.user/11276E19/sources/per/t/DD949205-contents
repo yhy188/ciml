@@ -1,0 +1,90 @@
+---
+title: "Ciml"
+author: "haiyan yu"
+date: "3/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+
+```{r}
+install.packages("SuperLearner")
+install.packages(c("caret", "glmnet", "randomForest", "ggplot2", "RhpcBLASctl"))
+install.packages("xgboost", repos=c("http://dmlc.ml/drat/", getOption("repos")), type="source")
+```
+
+
+```{r}
+############################
+# Setup example dataset.
+
+# Load a dataset from the MASS package.
+data(Boston, package = "MASS")
+
+# Review info on the Boston dataset.
+?MASS::Boston
+
+# Check for any missing data - looks like we don't have any.
+colSums(is.na(Boston))
+
+# Extract our outcome variable from the dataframe.
+outcome = Boston$medv
+
+# Create a dataframe to contain our explanatory variables.
+data = subset(Boston, select = -medv)
+
+# Check structure of our dataframe.
+str(data)
+
+# If we had factor variables we would use model.matrix() to convert to numerics.
+
+# Review our dimensions.
+dim(data)
+```
+
+```{r}
+# Set a seed for reproducibility in this random sampling.
+set.seed(1)
+
+# Reduce to a dataset of 150 observations to speed up model fitting.
+train_obs = sample(nrow(data), 150)
+
+# X is our training sample.
+x_train = data[train_obs, ]
+
+# Create a holdout set for evaluating model performance.
+# Note: cross-validation is even better than a single holdout sample.
+x_holdout = data[-train_obs, ]
+
+# Create a binary outcome variable: towns in which median home value is > 22,000.
+outcome_bin = as.numeric(outcome > 22)
+
+y_train = outcome_bin[train_obs]
+y_holdout = outcome_bin[-train_obs]
+
+# Review the outcome variable distribution.
+table(y_train, useNA = "ifany")
+
+```
+
+```{r}
+library(SuperLearner)
+# Review available models.
+listWrappers()
+# Peek at code for a model.
+SL.glmnet
+```
+
+```{r}
+# Set the seed for reproducibility.
+set.seed(1)
+
+# Fit lasso model.
+sl_lasso = SuperLearner(Y = y_train, X = x_train, family = binomial(),
+                        SL.library = "SL.glmnet")
+```
+

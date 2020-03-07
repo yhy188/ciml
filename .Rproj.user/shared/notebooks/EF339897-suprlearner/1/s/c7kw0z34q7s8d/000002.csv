@@ -1,0 +1,186 @@
+"0","install.packages(""xgboost"", repos=c(""http://dmlc.ml/drat/"", getOption(""repos"")), type=""source"")
+"
+"2","Installing package into ‘/Users/hayyen/Library/R/3.6/library’
+(as ‘lib’ is unspecified)
+"
+"1","Warning in "
+"1","install.packages"
+"1"," :
+  "
+"1","unable to access index for repository http://dmlc.ml/drat/src/contrib:
+  Line starting '<!DOCTYPE html> ...' is malformed!"
+"1","
+"
+"2","trying URL 'https://cran.rstudio.com/src/contrib/xgboost_0.90.0.2.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 845867 bytes (826 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 826 KB
+
+"
+"2","* installing *source* package ‘xgboost’ ...
+"
+"2","** package ‘xgboost’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","checking whether OpenMP will work in a package... "
+"1","no
+"
+"1","configure: creating ./config.status
+"
+"1","config.status: creating src/Makevars
+"
+"2","** libs
+"
+"2","Makevars:17: -DXGBOOST_STRICT_R_MODE=1"
+"2","
+Makevars:17: -DDMLC_LOG_BEFORE_THROW=0
+Makevars:17: -DDMLC_ENABLE_STD_THREAD=0
+Makevars:17: -DDMLC_DISABLE_STDIN=1
+Makevars:17: -DDMLC_LOG_CUSTOMIZE=1
+Makevars:17: -DXGBOOST_CUSTOMIZE_LOGGER=1
+Makevars:17: -DRABIT_CUSTOMIZE_MSG_
+Makevars:17: -DRABIT_STRICT_CXX98_
+"
+"1","clang++ -std=gnu++11 -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -pthread -fPIC  -Wall -g -O2  -c xgboost_R.cc -o xgboost_R.o
+"
+"1","clang++ -std=gnu++11 -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -pthread -fPIC  -Wall -g -O2  -c xgboost_custom.cc -o xgboost_custom.o
+"
+"1","clang -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c xgboost_assert.c -o xgboost_assert.o
+"
+"1","clang -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c init.c -o init.o
+"
+"1","clang++ -std=gnu++11 -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -pthread -fPIC  -Wall -g -O2  -c amalgamation/xgboost-all0.cc -o amalgamation/xgboost-all"
+"1","0.o
+"
+"2","In file included from amalgamation/xgboost-all0.cc:20:
+In file included from amalgamation/../src/objective/regression_obj.cc:17:
+In file included from amalgamation/../src/objective/regression_obj.cu:16:
+amalgamation/../src/objective/../common/transform.h:63:23: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+"
+"2","        distribution_{std::move(GPUDistribution::Block(devices))} {}
+                      ^
+"
+"2","amalgamation/../src/objective/../common/transform.h:63:23: note: remove std::move call here
+        distribution_{std::move(GPUDistribution::Block(devices))} {}
+                      ^~~~~~~~~~                               ~
+"
+"2","In file included from amalgamation/xgboost-all0.cc:13:
+In file included from amalgamation/../src/metric/metric.cc:6:
+In file included from ./include/xgboost/./metric.h:10:
+In file included from ./dmlc-core/include/dmlc/./registry.h:9:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/map:480:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__tree:16:
+/Ap"
+"2","plications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:2339:5: warning: delete called on non-final 'xgboost::tree::QuantileHistMaker::Builder' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:2652:7: note: in instantiation of member function 'std::__1::default_delete<xgboost:"
+"2",":tree::QuantileHistMaker::Builder>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+amalgamation/../src/tree/updater_quantile_hist.cc:70:14: note: in instantiation of member function 'std::__1::unique_ptr<xgboost::tree::QuantileHistMaker::Builder, std::__1::default_delete<xgboost::tree::QuantileHistMaker::Builder> >::reset' requested here
+    builder_.reset(new Builder(
+             ^
+"
+"2","2 warnings generated.
+"
+"1","clang++ -std=gnu++11 -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -pthread -fPIC  -Wall -g -O2  -c amalgamation/dmlc-minimum0.cc -o amalgamation/dmlc-minim"
+"1","um0.o
+"
+"1","clang++ -std=gnu++11 -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -pthread -fPIC  -Wall -g -O2  -c rabit/src/engine_empty.cc -o rabit/src/engine_empty.o
+"
+"1","clang++ -std=gnu++11 -I""/Library/Frameworks/R.framework/Resources/include"" -DNDEBUG -I./include -I./dmlc-core/include -I./rabit/include -I. -DXGBOOST_STRICT_R_MODE=1 -DDMLC_LOG_BEFORE_THROW=0 -DDMLC_ENABLE_STD_THREAD=0 -DDMLC_DISABLE_STDIN=1 -DDMLC_LOG_CUSTOMIZE=1 -DXGBOOST_CUSTOMIZE_LOGGER=1 -DRABIT_CUSTOMIZE_MSG_ -DRABIT_STRICT_CXX98_  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -pthread -fPIC  -Wall -g -O2  -c rabit/src/c_api.cc -o rabit/src/c_api.o
+"
+"1","clang++ -std=gnu++11 -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o xgboost.so ./xgboost_R.o ./xgboost_custom.o ./xgboost_assert.o ./init.o ./amalgamation/xgboost-all0.o ./amalgamation/dmlc-minimum0.o ./rabit/src/engine_empty.o ./rabit/src/c_api.o -pthread -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+"
+"2","installing to /Users/hayyen/Library/R/3.6/library/00LOCK-xgboost/00new/xgboost/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","** demo
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (xgboost)
+"
+"2","
+"
+"2","The downloaded source packages are in
+	‘/private/var/folders/nj/3m130j89061gvh2h4frpfky00000gn/T/RtmpP7NRkZ/downloaded_packages’"
+"2","
+"

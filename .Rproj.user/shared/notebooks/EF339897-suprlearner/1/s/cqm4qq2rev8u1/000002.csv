@@ -1,0 +1,45 @@
+"0","# Peek at code for a model.
+SL.glmnet
+"
+"1","function (Y, X, newX, family, obsWeights, id, alpha = 1, nfolds = 10, 
+"
+"1","    nlambda = 100, useMin = TRUE, loss = ""deviance"", ...) 
+"
+"1","{
+"
+"1","    .SL.require(""glmnet"")
+"
+"1","    if (!is.matrix(X)) {
+"
+"1","        X <- model.matrix(~-1 + ., X)
+"
+"1","        newX <- model.matrix(~-1 + ., newX)
+"
+"1","    }
+"
+"1","    fitCV <- glmnet::cv.glmnet(x = X, y = Y, weights = obsWeights, 
+"
+"1","        lambda = NULL, type.measure = loss, nfolds = nfolds, 
+"
+"1","        family = family$family, alpha = alpha, nlambda = nlambda, 
+"
+"1","        ...)
+"
+"1","    pred <- predict(fitCV, newx = newX, type = ""response"", s = ifelse(useMin, 
+"
+"1","        ""lambda.min"", ""lambda.1se""))
+"
+"1","    fit <- list(object = fitCV, useMin = useMin)
+"
+"1","    class(fit) <- ""SL.glmnet""
+"
+"1","    out <- list(pred = pred, fit = fit)
+"
+"1","    return(out)
+"
+"1","}
+"
+"1","<bytecode: 0x10ffc7608>
+"
+"1","<environment: namespace:SuperLearner>
+"

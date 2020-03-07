@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583234153857.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2545767096",
+    "id" : "DD949205",
+    "lastKnownWriteTime" : 1583236018,
+    "last_content_update" : 1583236018840,
+    "path" : "~/Downloads/Rpkg/ciml/man/suprlearner.Rmd",
+    "project_path" : "man/suprlearner.Rmd",
+    "properties" : {
+        "cursorPosition" : "90,0",
+        "last_setup_crc32" : "",
+        "scrollLine" : "80",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

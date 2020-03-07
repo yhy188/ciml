@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583234868261.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2013635070",
+    "id" : "3529304",
+    "lastKnownWriteTime" : 1583220951,
+    "last_content_update" : 1583220951,
+    "path" : "~/Downloads/Rpkg/ciml/CML_workshop_session1_practical1.R",
+    "project_path" : "CML_workshop_session1_practical1.R",
+    "properties" : {
+        "cursorPosition" : "214,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
